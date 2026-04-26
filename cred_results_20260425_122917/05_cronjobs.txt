@@ -1,0 +1,68 @@
+=== /etc/crontab ===
+# /etc/crontab: system-wide crontab
+# Unlike any other crontab you don't have to run the `crontab'
+# command to install the new version when you edit this file
+# and files in /etc/cron.d. These files also have username fields,
+# that none of the other crontabs do.
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root	cd / && run-parts --report /etc/cron.hourly
+25 6	* * *	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.daily; }
+47 6	* * 7	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.weekly; }
+52 6	1 * *	root	test -x /usr/sbin/anacron || { cd / && run-parts --report /etc/cron.monthly; }
+#
+
+=== /etc/cron.d ===
+total 36
+drwxr-xr-x   2 root root  4096 Apr 21 15:19 .
+drwxr-xr-x 196 root root 12288 Apr 25 12:13 ..
+-rw-r--r--   1 root root   188 Jul 30  2025 e2scrub_all
+-rw-r--r--   1 root root   607 Jun  3  2025 john
+-rw-r--r--   1 root root   712 Dec  4  2024 php
+-rw-r--r--   1 root root   102 Oct  5  2025 .placeholder
+-rw-r--r--   1 root root   400 Jan 15  2024 sysstat
+/etc/cron.d/john:# Start john everyday at the same to try to crack the passwords. The
+
+=== /etc/cron.daily ===
+total 48
+drwxr-xr-x   2 root root  4096 Apr 21 15:19 .
+drwxr-xr-x 196 root root 12288 Apr 25 12:13 ..
+-rwxr-xr-x   1 root root   539 Jul 17  2025 apache2
+-rwxr-xr-x   1 root root  1478 Nov 12 22:46 apt-compat
+-rwxr-xr-x   1 root root   123 Jul 17  2025 dpkg
+-rwxr-xr-x   1 root root   377 Jul 14  2024 logrotate
+-rwxr-xr-x   1 root root  1395 May  2  2025 man-db
+-rw-r--r--   1 root root   102 Oct  5  2025 .placeholder
+-rwxr-xr-x   1 root root   652 Dec  7  2020 plocate
+-rwxr-xr-x   1 root root   526 Jan 15  2024 sysstat
+
+=== /etc/cron.hourly ===
+total 20
+drwxr-xr-x   2 root root  4096 Apr 21 15:19 .
+drwxr-xr-x 196 root root 12288 Apr 25 12:13 ..
+-rw-r--r--   1 root root   102 Oct  5  2025 .placeholder
+
+=== /etc/cron.monthly ===
+total 20
+drwxr-xr-x   2 root root  4096 Apr 21 15:19 .
+drwxr-xr-x 196 root root 12288 Apr 25 12:13 ..
+-rw-r--r--   1 root root   102 Oct  5  2025 .placeholder
+
+=== /etc/cron.weekly ===
+total 24
+drwxr-xr-x   2 root root  4096 Apr 21 15:19 .
+drwxr-xr-x 196 root root 12288 Apr 25 12:13 ..
+-rwxr-xr-x   1 root root  1055 May  2  2025 man-db
+-rw-r--r--   1 root root   102 Oct  5  2025 .placeholder
+
+=== User crontabs ===

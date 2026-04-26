@@ -1,0 +1,67 @@
+=== /etc/passwd ===
+root:x:0:0:root:/root:/usr/bin/zsh
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon:/usr/lib/dhcpcd:/bin/false
+mysql:x:101:102:MariaDB Server:/nonexistent:/bin/false
+tss:x:102:104:TPM software stack:/var/lib/tpm:/bin/false
+strongswan:x:103:65534::/var/lib/strongswan:/usr/sbin/nologin
+systemd-timesync:x:991:991:systemd Time Synchronization:/:/usr/sbin/nologin
+_gophish:x:104:106::/var/lib/gophish:/usr/sbin/nologin
+iodine:x:105:65534::/run/iodine:/usr/sbin/nologin
+messagebus:x:990:990:System Message Bus:/nonexistent:/usr/sbin/nologin
+tcpdump:x:106:107::/nonexistent:/usr/sbin/nologin
+miredo:x:107:65534::/var/run/miredo:/usr/sbin/nologin
+_rpc:x:108:65534::/run/rpcbind:/usr/sbin/nologin
+redis:x:109:110::/var/lib/redis:/usr/sbin/nologin
+mosquitto:x:110:113::/var/lib/mosquitto:/usr/sbin/nologin
+redsocks:x:111:114::/var/run/redsocks:/usr/sbin/nologin
+stunnel4:x:989:989:stunnel service system account:/var/run/stunnel4:/usr/sbin/nologin
+sshd:x:988:65534:sshd user:/run/sshd:/usr/sbin/nologin
+dnsmasq:x:999:65534:dnsmasq:/var/lib/misc:/usr/sbin/nologin
+Debian-snmp:x:112:115::/var/lib/snmp:/bin/false
+sslh:x:113:117::/nonexistent:/usr/sbin/nologin
+avahi:x:114:118:Avahi mDNS daemon:/run/avahi-daemon:/usr/sbin/nologin
+speech-dispatcher:x:115:29:Speech Dispatcher:/run/speech-dispatcher:/bin/false
+_gvm:x:116:119::/var/lib/openvas:/usr/sbin/nologin
+postgres:x:117:120:PostgreSQL administrator:/var/lib/postgresql:/bin/bash
+usbmux:x:118:46:usbmux daemon:/var/lib/usbmux:/usr/sbin/nologin
+cups-pk-helper:x:119:121:user for cups-pk-helper service:/nonexistent:/usr/sbin/nologin
+nm-openvpn:x:120:122:NetworkManager OpenVPN:/var/lib/openvpn/chroot:/usr/sbin/nologin
+inetsim:x:121:123::/var/lib/inetsim:/usr/sbin/nologin
+pipewire:x:987:987:system user for pipewire:/nonexistent:/usr/sbin/nologin
+nm-openconnect:x:986:986:NetworkManager OpenConnect plugin:/:/usr/sbin/nologin
+geoclue:x:122:125::/var/lib/geoclue:/usr/sbin/nologin
+lightdm:x:123:126:Light Display Manager:/var/lib/lightdm:/bin/false
+statd:x:124:65534::/var/lib/nfs:/usr/sbin/nologin
+saned:x:125:127::/var/lib/saned:/usr/sbin/nologin
+polkitd:x:985:985:User for polkitd:/:/usr/sbin/nologin
+rtkit:x:126:128:RealtimeKit:/proc:/usr/sbin/nologin
+colord:x:984:984:colord colour management daemon:/var/lib/colord:/usr/sbin/nologin
+pcscd:x:983:983:PC/SC Smart Card Daemon:/:/usr/sbin/nologin
+umid:x:1000:1000:umid,,,:/home/umid:/usr/bin/zsh
+
+--- Users with login shell ---
+root:x:0:0:root:/root:/usr/bin/zsh
+sync:x:4:65534:sync:/bin:/bin/sync
+postgres:x:117:120:PostgreSQL administrator:/var/lib/postgresql:/bin/bash
+umid:x:1000:1000:umid,,,:/home/umid:/usr/bin/zsh
+
+=== /etc/shadow ===
+Not readable (requires root)
