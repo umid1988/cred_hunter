@@ -1,5 +1,0 @@
-/home/umid/.mozilla/firefox/8155ooma.default-esr/key4.db
-/home/umid/.mozilla/firefox/8155ooma.default-esr/logins.json
-/home/umid/.mozilla/firefox/8155ooma.default-esr/cert9.db
-/home/umid/.pki/nssdb/key4.db
-/home/umid/.pki/nssdb/cert9.db
